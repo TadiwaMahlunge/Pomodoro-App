@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.stage.Screen?>
+
+<BorderPane  prefHeight="400.0" prefWidth="100.0" style="-fx-background-color: #02ff03;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.com.VictoryController">
+   <center>
+      <Pane fx:id="centrePane"  style="-fx-background-color: #01a300; -fx-background-radius: 30;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="decorLabel1" layoutX="39.0" prefHeight="390.0" prefWidth="26.0" text="BREAK" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="decorLabel2" layoutX="85.0" layoutY="25.0" prefHeight="390.0" prefWidth="9.0" textFill = "#f9ed03" text="SUCCESS" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="decorLabel3" layoutX="128.0" prefHeight="390.0" prefWidth="28.0" text="BREAK" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+   <left>
+      <Pane prefHeight="400.0" prefWidth="100.0" style="-fx-background-color: #02ff03;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="400.0" prefWidth="100.0" style="-fx-background-color: #02ff03;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="120.0" prefWidth="${screen.visualBounds.width}" style="-fx-background-color: #02ff03;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" prefHeight="100.0" style="-fx-background-color: #01a300; -fx-background-radius: 30;" text="WELL DONE!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <Pane fx:id="pane" prefHeight="100.0" prefWidth="${screen.visualBounds.width}"  BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="colon" alignment="CENTER" text=":" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="secField" alignment="CENTER" editable="false" promptText="20" style="-fx-background-color: white;" text="02">
+               <font>
+                  <Font name="System Regular" size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="minField" alignment="CENTER" editable="false" layoutX="67.0" layoutY="14.0" style="-fx-background-color: white;" text="30">
+               <font>
+                  <Font name="System Regular" size="25.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
